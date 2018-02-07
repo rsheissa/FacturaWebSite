@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Members.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Sistemas Cas-Vaz</title>
+    <link href="~/Styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="wrapper">
+        <form id="form1" runat="server">
+
+            <div id="header">
+                <span class="title">Sistemas Cas-Vaz</span>
+                <%--<span class="breadcrumb">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                    </asp:SiteMapPath>
+                </span>--%>
+            </div>
+
+            <div id="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    <!-- Page-specific content will go here -->
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div id="navigation">
+                
+                <ul>
+                    <li><asp:HyperLink runat="server" ID="lnkManual" NavigateUrl="~/Members/Captura.aspx">Manual</asp:HyperLink></li>
+                    <li><asp:HyperLink runat="server" ID="lnkAuto" NavigateUrl="~/Members/Captura2.aspx">Automatico</asp:HyperLink></li>
+                    <li><asp:HyperLink runat="server" ID="lnkConsulta" NavigateUrl="~/Members/Consulta.aspx">Consulta</asp:HyperLink></li>
+                    <li><asp:HyperLink runat="server" ID="lnkReporte" NavigateUrl="~/Members/Reporte.aspx">Reporte</asp:HyperLink></li>
+                    <li><asp:HyperLink runat="server" ID="lnkAdmin" NavigateUrl="~/Members/Admin.aspx">Admin</asp:HyperLink></li>
+                    <li><asp:HyperLink runat="server" ID="lnkSessionOut" NavigateUrl="~/Logout.aspx">Salir</asp:HyperLink></li>
+                </ul>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
